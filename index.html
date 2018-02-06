@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/grid.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Dapp example</h1>
+        <p class="lead">Businesscard</p>
+        <p>
+            Available addresses:
+            <ul>
+                <li>0x525Ee83356c3282d959F301CE8346C68c9C53202 (you)</li>
+                <li>0x71BF548F1247C87887Af261574aD4C8FcFe3BD96</li>
+                <li>0x147F072D13EC8c0EB38c55d89f5aD37587b891F1</li>
+                <li>0x9689f1cdf80d51b9eb3f64de97b8ae7c8b504372</li>
+            </ul>
+        </p>
+
+        <h3>BusinessCard</h3>
+        <p>Please send account address for checking user data</p>
+        <!-- Форма отправки адреса для получения визитной карточки -->
+        <form id="check">
+            <div class="form-label-group">
+                <input type="text" id="inputAddr" class="form-control" placeholder="0x525ee83356c3282d959f301ce8346c68c9c53202" required="true"
+                    autofocus="true">
+                <label for="inputEmail">Address</label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">View</button>
+        </form>
+        <div class="row">
+            <div class="col-4" id="u-name">Name</div>
+            <div class="col-4" id="u-age">Age</div>
+            <div class="col-4" id="u-city">City</div>
+        </div>
+
+    </div>
+</body>
+<!-- Подключаем все javascript-библиотеки. Это обязательно делать в конце html-файла  -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="js/web3.min.js"></script>
+<script src="js/dapp.js"></script>
+
+</html>
